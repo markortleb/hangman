@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.event.WindowEvent;
 
 
 public class MainWindow extends JFrame {
@@ -11,6 +12,7 @@ public class MainWindow extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 1000, 600);
         showStartScreen();
+        setResizable(false);
         setVisible(true);
     }
 
@@ -30,6 +32,10 @@ public class MainWindow extends JFrame {
         contentPane = new PlayScreen(this, category);
         setContentPane(contentPane);
         validate();
+    }
+
+    public void quitProgram() {
+        dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
     }
 
 }
