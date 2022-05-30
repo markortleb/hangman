@@ -14,4 +14,4 @@ This is a simple Hangman game written in Java with Swing. This program consists 
       comprised of underscores indicating a missing letter, and as user correctly guesses, the 
       underscores will be replaced with the actual letter from the phrase.
     * If users win or lose, the right side of this screen is replaced with a results panel, with message
-      and buttons to Play Again, Choose Category, or Quit.
+      and buttons to Play Again, Choose Category, or Quit. 
